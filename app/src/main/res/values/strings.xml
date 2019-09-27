@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Quiz App</string>
+    <string name="q1txt">What is the latest version of Android ?</string>
+</resources>
