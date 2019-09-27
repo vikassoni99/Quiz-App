@@ -10,23 +10,28 @@ import com.example.quizapp.R.layout.ques2
 import kotlinx.android.synthetic.main.ques2.*
 
 class Act2:AppCompatActivity() {
-    var a:Int=0
+    var score:String=""
+    var a:Int=0//intent.getStringExtra("score").toInt()
     var chId:RadioButton?=null
         override fun onCreate(savedInstanceState: Bundle?) {
             super.onCreate(savedInstanceState)
             setContentView(ques2)
 
+            score=intent.getStringExtra("score")
+            a=score.toInt()
             radioGrp.setOnCheckedChangeListener { group, checkedId ->
                 chId=findViewById(checkedId) }
 
             submit_button.setOnClickListener {
                 when(chId){
-                    radio_ans->a=1
-                    else->a=0
+                    radio_ans->a+=1
+                    else->a+=0
                 }
                 Toast.makeText(this@Act2,"Score is : "+a,Toast.LENGTH_SHORT).show()
-
-                startActivity(Intent(this@Act2,Score::class.java))
+                //score=a.toString()
+                var intent:Intent=Intent(this@Act2,Score::class.java);
+                intent.putExtra("score",a.toString())
+                startActivity(intent);
             }
 
 
