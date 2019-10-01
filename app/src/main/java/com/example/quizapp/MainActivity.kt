@@ -11,7 +11,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 class MainActivity : AppCompatActivity() {
     var cId:RadioButton? = null
     var a:Int=0;
-    //var score:Int?=null
+    //var activity_score:Int?=null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,10 +25,10 @@ class MainActivity : AppCompatActivity() {
                 radio_ans->a+=1
                 else->a+=0
             }
-            Toast.makeText(this@MainActivity,"Score is : "+a,Toast.LENGTH_SHORT).show()
-            var intent:Intent= Intent(this@MainActivity,Act2::class.java);
-            //score=a
-            intent.putExtra("score",a.toString())
+            Toast.makeText(this@MainActivity,"ScoreActivity is : $a",Toast.LENGTH_SHORT).show()
+            var intent:Intent= Intent(this@MainActivity,Question2Activity::class.java);
+            //activity_score=a
+            intent.putExtra("activity_score",a.toString())
             startActivity(intent);
         }
 

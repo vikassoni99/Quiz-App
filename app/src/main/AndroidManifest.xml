@@ -16,10 +16,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Act2">
+        <activity android:name=".Question2Activity">
         </activity>
-        <activity android:name=".Score">
+        <activity android:name=".ScoreActivity">
         </activity>
+        <activity android:name=".SeekbarActivity">
+        </activity>
+        <activity android:name=".NameActivity"></activity>
     </application>
 
 </manifest>

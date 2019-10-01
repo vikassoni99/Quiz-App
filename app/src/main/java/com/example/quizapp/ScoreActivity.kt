@@ -2,14 +2,14 @@ package com.example.quizapp
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import kotlinx.android.synthetic.main.score.*
+import kotlinx.android.synthetic.main.activity_score.*
 
-class Score: AppCompatActivity() {
+class ScoreActivity: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.score)
+        setContentView(R.layout.activity_score)
 
-        var score:String?=intent.getStringExtra("score")
+        var score:String?=intent.getStringExtra("activity_score")
         var correct:String=score.toString()
         var incorrect:String=(2-correct.toInt()).toString()
         var points:String=(correct.toInt()*100).toString()
