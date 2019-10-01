@@ -55,7 +55,7 @@
 
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/buttonNext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/button_shape"
@@ -74,7 +74,7 @@
         app:layout_constraintGuide_percent="0.92" />
 
     <EditText
-        android:id="@+id/textViewName"
+        android:id="@+id/editTextName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="40dp"
@@ -88,7 +88,7 @@
         android:id="@+id/ratingBar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/textViewName"
+        app:layout_constraintTop_toBottomOf="@+id/editTextName"
         app:layout_constraintBottom_toTopOf="@+id/guideH2"
         app:layout_constraintStart_toStartOf="@+id/guideV1"
         app:layout_constraintEnd_toEndOf="@+id/guideV2"

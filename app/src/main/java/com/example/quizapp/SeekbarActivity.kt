@@ -12,8 +12,8 @@ class SeekbarActivity :AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_seekbar)
 
-        var score=intent.getStringExtra("activity_score")
-
+        var score=intent.getStringExtra("score")
+        var x:Int?=0
         seekBar?.setOnSeekBarChangeListener(object:SeekBar.OnSeekBarChangeListener{
             override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
                 //TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
@@ -24,17 +24,20 @@ class SeekbarActivity :AppCompatActivity() {
             }
 
             override fun onStopTrackingTouch(seekBar: SeekBar?) {
-                var x:Int?=seekBar?.progress?.toInt()
+                x=seekBar?.progress?.toInt()
                 Toast.makeText(this@SeekbarActivity,when(x){
                     in 50..70->"Hey Human !"
                     else->"Hey Bot"
                 },Toast.LENGTH_SHORT).show()
-                if(x in 50..70){
-                    var intent:Intent=Intent(this@SeekbarActivity,NameActivity::class.java);
-                    intent.putExtra("activity_score",score)
-                    startActivity(intent);
-                }
             }
         })
+
+        button1.setOnClickListener {
+            if(x in 50..70){
+                var intent:Intent=Intent(this@SeekbarActivity,NameActivity::class.java);
+                intent.putExtra("score",score)
+                startActivity(intent);
+            }
+        }
     }
 }

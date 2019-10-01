@@ -1,6 +1,7 @@
 package com.example.quizapp
 
 import android.os.Bundle
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_score.*
 
@@ -9,12 +10,17 @@ class ScoreActivity: AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_score)
 
-        var score:String?=intent.getStringExtra("activity_score")
+        var name:String?=intent.getStringExtra("name").toString()
+        var score:String?=intent.getStringExtra("score")
         var correct:String=score.toString()
         var incorrect:String=(2-correct.toInt()).toString()
         var points:String=(correct.toInt()*100).toString()
+        val rating:String=intent.getStringExtra("rating")
+
         textViewPointsValue.setText(points)
         textViewCorrectValue.setText(correct)
         textViewIncorrectValue.setText(incorrect)
+        textViewAns1.setText("Hey $name !")
+        textViewAns2.setText("You rated us $rating /5")
     }
 }

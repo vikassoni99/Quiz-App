@@ -29,7 +29,7 @@ class Question2Activity:AppCompatActivity() {
                 Toast.makeText(this@Question2Activity,"ScoreActivity is : $a",Toast.LENGTH_SHORT).show()
                 //activity_score=a.toString()
                 var intent:Intent=Intent(this@Question2Activity,SeekbarActivity::class.java);
-                intent.putExtra("activity_score",a.toString())
+                intent.putExtra("score",a.toString())
                 startActivity(intent);
             }
 
