@@ -14,10 +14,10 @@ class NameActivity:AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_name)
-
         var score:String=intent.getStringExtra("score")
         val editText=findViewById<EditText>(R.id.editTextName)
         val ratingBarr=findViewById<RatingBar>(R.id.ratingBar)
+
         val name = editTextName.text
         buttonNext.setOnClickListener {
             var intent:Intent=Intent(this@NameActivity,ScoreActivity::class.java);

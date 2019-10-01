@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="Question 1"
+        android:text="@string/q1"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -22,8 +22,8 @@
         android:id="@+id/textView2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="@string/q1txt"
-        android:textSize="30dp"
+        android:text="@string/question1"
+        android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/guideBelowQ"
         app:layout_constraintEnd_toEndOf="@+id/guideV2"
         app:layout_constraintHorizontal_bias="1.0"
@@ -68,23 +68,26 @@
             android:id="@+id/radio_pirates"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginVertical="10dp"
-            android:text="Android Pie"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/q1o1"
             android:textSize="25sp" />
 
         <RadioButton
             android:id="@+id/radio_ans"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginVertical="10dp"
-            android:text="Android 10"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/q1o2"
             android:textSize="25sp" />
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginVertical="10dp"
-            android:text="Android Marshmallow"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/q1o3"
             android:textSize="25sp">
 
         </RadioButton>
@@ -92,8 +95,9 @@
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginVertical="10dp"
-            android:text="Android 11"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/q1o4"
             android:textSize="25sp">
 
         </RadioButton>
@@ -104,7 +108,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/button_shape"
-        android:text="Next"
+        android:text="@string/button_next"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/guideV2"
         app:layout_constraintHorizontal_bias="0.496"
