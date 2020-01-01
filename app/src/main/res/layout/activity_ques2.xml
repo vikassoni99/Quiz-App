@@ -9,7 +9,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="@string/q2"
-        android:textSize="30sp"
+        android:textSize="@dimen/dim_ques_num"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guideV1"
@@ -20,7 +20,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/question2"
-        android:textSize="30sp"
+        android:textSize="@dimen/dim_question"
         app:layout_constraintBottom_toTopOf="@+id/guideH1"
         app:layout_constraintEnd_toStartOf="@+id/guideV2"
         app:layout_constraintHorizontal_bias="1.0"
@@ -68,7 +68,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:text="@string/q2o1"
-            android:textSize="25sp" />
+            android:textSize="@dimen/dim_option" />
 
         <RadioButton
             android:layout_width="wrap_content"
@@ -76,7 +76,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:text="@string/q2o2"
-            android:textSize="25sp" />
+            android:textSize="@dimen/dim_option" />
 
         <RadioButton
 
@@ -86,7 +86,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:text="@string/q2o3"
-            android:textSize="25sp">
+            android:textSize="@dimen/dim_option">
 
         </RadioButton>
 
@@ -96,7 +96,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:text="@string/q2o4"
-            android:textSize="25sp">
+            android:textSize="@dimen/dim_option">
 
         </RadioButton>
     </RadioGroup>
@@ -107,6 +107,7 @@
         android:layout_height="wrap_content"
         android:background="@drawable/button_shape"
         android:text="@string/button_next"
+        android:textSize="@dimen/dim_bt_txt"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideV2"
         app:layout_constraintHorizontal_bias="0.496"
